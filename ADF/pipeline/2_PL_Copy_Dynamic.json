@@ -1,6 +1,7 @@
 {
 	"name": "2_PL_Copy_Dynamic",
 	"properties": {
+		"description": "This pipeline is for rama branch\n",
 		"activities": [
 			{
 				"name": "Copy file",
