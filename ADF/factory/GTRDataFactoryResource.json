@@ -1,0 +1,9 @@
+{
+	"name": "GTRDataFactoryResource",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ba65bf03-dc1d-482e-99ed-b1a2f385092c",
+		"tenantId": "877ae74b-c3ca-4277-b0ee-ca719f11acc3"
+	}
+}

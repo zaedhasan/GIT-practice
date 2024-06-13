@@ -1,0 +1,54 @@
+{
+	"name": "DS_Storage_Gen2_PurchaseOrder",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_StorageGen2_demo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "PurchaseOrder.csv",
+				"folderPath": "Source",
+				"fileSystem": "dataengineering"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "PurchaseOrderID",
+				"type": "String"
+			},
+			{
+				"name": "CustomerCode",
+				"type": "String"
+			},
+			{
+				"name": "ProductCode",
+				"type": "String"
+			},
+			{
+				"name": "EmployeeCode",
+				"type": "String"
+			},
+			{
+				"name": "PurchaseOrderDate",
+				"type": "String"
+			},
+			{
+				"name": "Quantity",
+				"type": "String"
+			},
+			{
+				"name": "UnitPrice",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
