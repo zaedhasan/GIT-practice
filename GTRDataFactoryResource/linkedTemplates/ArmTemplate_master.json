@@ -7,9 +7,17 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "GTRDataFactoryResource"
 		},
+		"LS_ADB_AzureDataBricks_accessToken": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accessToken' of 'LS_ADB_AzureDataBricks'"
+		},
 		"LS_StorageGen2_demo_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_StorageGen2_demo'"
+		},
+		"LS_ADB_AzureDataBricks_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "0623-144723-enfb8mmq"
 		},
 		"LS_StorageGen2_demo_properties_typeProperties_url": {
 			"type": "string",
@@ -42,8 +50,14 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"LS_ADB_AzureDataBricks_accessToken": {
+						"value": "[parameters('LS_ADB_AzureDataBricks_accessToken')]"
+					},
 					"LS_StorageGen2_demo_accountKey": {
 						"value": "[parameters('LS_StorageGen2_demo_accountKey')]"
+					},
+					"LS_ADB_AzureDataBricks_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('LS_ADB_AzureDataBricks_properties_typeProperties_existingClusterId')]"
 					},
 					"LS_StorageGen2_demo_properties_typeProperties_url": {
 						"value": "[parameters('LS_StorageGen2_demo_properties_typeProperties_url')]"

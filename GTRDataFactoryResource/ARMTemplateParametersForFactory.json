@@ -5,8 +5,14 @@
 		"factoryName": {
 			"value": "GTRDataFactoryResource"
 		},
+		"LS_ADB_AzureDataBricks_accessToken": {
+			"value": ""
+		},
 		"LS_StorageGen2_demo_accountKey": {
 			"value": ""
+		},
+		"LS_ADB_AzureDataBricks_properties_typeProperties_existingClusterId": {
+			"value": "0623-144723-enfb8mmq"
 		},
 		"LS_StorageGen2_demo_properties_typeProperties_url": {
 			"value": "https://storageaccountdemo4.dfs.core.windows.net/"
